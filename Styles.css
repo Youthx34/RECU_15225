@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: white;
+}
+
+p {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    padding: 10px;
+}
+
+h3 {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    padding: 10px;
+}
+
+.formulario-calculo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    padding: 20px;
+}
+
+button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    background-color: green;
+    color: white;
+    border: 1px solid #006400;
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .formulario-calculo {
+        grid-template-columns: 1fr;
+    }
+}
